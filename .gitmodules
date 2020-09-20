@@ -18,7 +18,8 @@
 	url = https://github.com/mumble-voip/speexdsp.git
 [submodule "3rdparty/rnnoise-src"]
 	path = 3rdparty/rnnoise-src
-	url = https://github.com/mumble-voip/rnnoise.git
+	url = https://github.com/Septarius/rnnoise.git
+	branch = rnnoise-updates
 [submodule "themes/Mumble"]
 	path = themes/Mumble
 	url = https://github.com/mumble-voip/mumble-theme.git
