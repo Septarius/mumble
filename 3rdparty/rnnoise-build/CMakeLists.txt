@@ -42,7 +42,7 @@ if(MSVC)
 	# Use malloc() and free() instead of variable length arrays (unsupported)
 	target_compile_definitions(rnnoise PRIVATE "USE_MALLOC")
 	# Define M_PI
-	target_compile_definitions(rnnoise PRIVATE "_USE_MATH_DEFINES")
+	# target_compile_definitions(rnnoise PRIVATE "_USE_MATH_DEFINES")
 endif()
 
 target_sources(rnnoise PRIVATE
