@@ -68,3 +68,11 @@ target_sources(celt PRIVATE
 )
 
 target_disable_warnings(celt)
+
+find_library(MATH_LIBRARY m)
+
+# If -lm exists
+if(MATH_LIBRARY)
+	# Link it to prevent "contains an unresolvable reference to symbol sin: it's probably a plugin"
+	target_link_libraries(celt PUBLIC ${MATH_LIBRARY})
+endif()
