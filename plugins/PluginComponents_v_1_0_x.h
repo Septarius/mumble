@@ -16,7 +16,7 @@
 #	include <string>
 #endif
 
-#ifdef QT_VERSION
+#ifdef QT_CORE_LIB
 #	include <QString>
 #endif
 
@@ -298,7 +298,7 @@ struct Version {
 			   + std::string(".") + std::to_string(this->patch);
 	}
 
-#	ifdef QT_VERSION
+#	ifdef QT_CORE_LIB
 	operator QString() const {
 		return QString::fromLatin1("v%0.%1.%2").arg(this->major).arg(this->minor).arg(this->patch);
 	}
